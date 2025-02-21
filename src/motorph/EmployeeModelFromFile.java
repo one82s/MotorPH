@@ -16,13 +16,10 @@ import java.util.logging.Logger;
  */
 public class EmployeeModelFromFile extends EmployeeModel {
 
-//    public static void main(String[] args) {
-//        EmployeeModelFromFile emp = new EmployeeModelFromFile();
-//    }
     public EmployeeModelFromFile() {
-        String textFile = "D:\\FilesToBeRead\\EmployeeData.txt";
+        File file = new File("./src/FilesToBeRead/EmployeeData.txt");
         employees = new Employee[3];
-        getDataFromFile(textFile);
+        getDataFromFile(file);
 
     }
 
@@ -31,9 +28,9 @@ public class EmployeeModelFromFile extends EmployeeModel {
         return employees;
     }
 
-    private void getDataFromFile(String textFile) {
+    private void getDataFromFile(File textFile) {
         try {
-            Scanner scannerToGetFile = new Scanner(new File(textFile));
+            Scanner scannerToGetFile = new Scanner(textFile);
             int counter = 0;
             while (scannerToGetFile.hasNextLine()) {
                 String data = scannerToGetFile.nextLine();

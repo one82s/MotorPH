@@ -14,7 +14,7 @@ public class EmployeeModelFromClass extends EmployeeModel {
     public EmployeeModelFromClass() {
         Employee employee1 = new Employee();
         employee1.setEmpNo("10002");
-        employee1.setLastName("Mata");
+        employee1.setLastName("Matador");
         employee1.setFirstName("Christian");
         employee1.setBirthday("10/21/1987");
         employee1.setAddress("90 O'Keefe Spur Apt. 379, Catigbian 2772 Sulu");
@@ -35,7 +35,7 @@ public class EmployeeModelFromClass extends EmployeeModel {
 
         Employee employee2 = new Employee();
         employee2.setEmpNo("10012");
-        employee2.setLastName("De Leon");
+        employee2.setLastName("Gomez");
         employee2.setFirstName("Selena");
         employee2.setBirthday("02/20/1975");
         employee2.setAddress("89A Armstrong Trace, Compostela 7874 Maguindanao");
