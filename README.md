@@ -1,3 +1,5 @@
+
+### IGNORE this instruction, implementation has changed ###
 Get data from file:
 Option 1:
 1. If you have D drive, copy FilesToBeRead folder that comes from this repository to your D drive.
